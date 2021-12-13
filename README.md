@@ -30,11 +30,6 @@ AFTER UPDATE ON user
 DELIMITER;
 
 /*
-함수 재등록을 위해 함수가 이미 존재한다면 기존 함수 삭제
-*/
-DROP FUNCTION if EXISTS setGrade;
-
-/*
 포인트에 따라 등급을 계산하는 함수
 */
 DELIMITER $$
